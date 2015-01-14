@@ -1,0 +1,427 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Academia P&D</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/logged.css" rel="stylesheet">
+  
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<!--<link href="js/select2-3.5.1/select2.min.css" />
+	<script src="js/select2-3.5.1/select2.js"></script> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+
+</head>
+<body >
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+		
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					Academia P&D
+				</a>
+			</div>
+		
+		<div class="container"> 
+		<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<span class="glyphicon glyphicon-user"></span> 
+								<strong>Google</strong>
+							<span class="glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="dropdown-menu" role="menu" style="padding: 15px;min-width: 250px;">
+							<li>
+								<div class="navbar-login">
+									<div class="row">
+										<div class="col-lg-4">
+											<p class="text-center">
+												<img src="img/logos/google.png" class="img-responsive img-circle" alt="Foto de perfil">
+                                            </p>
+										</div>
+										<div class="col-lg-8">
+											<p class="text-left userinfo"><strong>Google</strong></p>
+											<p class="text-left small userinfo">google@google.com</p>
+											<p class="text-left">
+												<a  href="#" class="btn btn-info btn-block btn-sm" data-toggle="modal" data-target="#editUser">Editar</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="navbar-login navbar-login-session">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="index.html" class="btn btn-danger btn-block">Sair</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li> 						
+                        <a class="pagescroll projetos" href="#projetos" >Projetos</a>
+                  	</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Fim do Navegation Iniciio do conteudo-->
+
+
+	<section id="projetos" class="bg-light-gray"> 
+		<div class="container" align="center">
+			<div class="row" align="center">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#criarProjeto" >Criar Projeto!</button>
+			</div>
+		</div><br />
+        <div class="panel panel-info" >
+            <div class="panel-heading">
+                <div class="panel-title">Projetos</div>               
+            </div>
+            <table class="table">
+                <thead>
+                    <tr >
+                        <th>#</th>
+                        <th>Titulo</th>
+						<th>Universidade</th>
+                        <th>Bolsa</th>
+                        <th>Data Inicio</th>
+						<th>Data Fim</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Carro sem motorista</td>
+                        <td>CEFETMG</td>
+                        <td>1M</td>
+						<td>14/12/2014</td>
+						<td>14/12/2015</td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-info btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td>Carro sem motorista</td>
+                        <td>CEFETMG</td>
+                        <td>1M</td>
+						<td>14/12/2014</td>
+						<td>14/12/2015</td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-info btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carro sem motorista</td>
+                        <td>CEFETMG</td>
+                        <td>1M</td>
+						<td>14/12/2014</td>
+						<td>14/12/2015</td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-info btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Carro sem motorista</td>
+                        <td>CEFETMG</td>
+                        <td>1M</td>
+						<td>14/12/2014</td>
+						<td>14/12/2015</td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-info btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carro sem motorista</td>
+                        <td>CEFETMG</td>
+                        <td>1M</td>
+						<td>14/12/2014</td>
+						<td>14/12/2015</td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-info btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+		<div class="clearfix"></div>
+		<ul class="pagination pull-right">
+			<li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+		</ul>
+		
+		<!-- Modals -->
+		<div class="modal fade projectModal" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title custom_align" id="Heading">Editar Projeto</h4>
+					</div>
+					<div class="modal-body">
+                    <form class="projectForm" id="editProject" method="post" action='' name="editProject">
+						<div class="form-group">
+							<input class="form-control " type="text" placeholder="Titulo" name="title">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Descrição" id="desc" name="description" height=400px;></textarea>
+						</div>
+						<div class="form-group hasfeedback">
+							<select class="combobox input-large form-control" name="university">
+								<option value="">Selecionar a Universidade </option>
+								<option value="CEFET">CEFETMG</option>
+								<option value="ITA">ITA</option>
+								<option value="UFMG">UFMG</option>               
+							</select>
+						</div>
+						<div class="form-group hasfeedback">
+							<select class="combobox input-large form-control" name="knowledge"  >
+								<option value="">Selecionar uma área de Conhecimento </option>
+								<option value="IC">Inteligência Computacional</option>
+								<option value="IHC">IHC</option>
+								<option value="AOC">AOC</option>
+								<option value="Hardware">Hardware</option>											
+							</select>
+						</div>
+						<div class="form-group">
+							<input class="form-control " min="0" type="number" placeholder="Valor da Bolsa" name="valorBolsa">
+						</div>
+						<div class="form-group">
+							<span class="input-group-addon">Data Inicio</span>
+							<input type="text" class="form-control " name="dataInicio" id="dataInicio" placeholder="dd/mm/yyyy">
+						</div>
+						<div class="form-group">
+							<span class="input-group-addon">Data Fim</span>
+							<input type="text" class="form-control" name="dataFim" id="dataFim" placeholder="dd/mm/yyyy">
+						</div>
+                        <div class="form-group">
+						<button type="submit" class="btn btn-warning btn-lg  button-success" style="width: 100%;" disabled><span class="glyphicon glyphicon-ok-sign"></span>Editar</button>
+					</div>
+                    </form>
+					</div>
+				</div>
+    <!-- /.modal-content --> 
+			</div>
+      <!-- /.modal-dialog --> 
+		</div>
+		
+        <!-- Modal cadastro -->
+    <div class="modal fade projectModal" id="criarProjeto" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+				<h4 class="modal-title custom_align" id="Heading">Criar Projeto</h4>
+            </div>
+            <div class="modal-body">
+                <form class="projectForm" id="createProjectForm" method="post" action='' name="createProjectForm">
+						<div class="form-group">
+							<input class="form-control " type="text" placeholder="Titulo" name="title">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Descrição" id="desc" name="description" height=400px;></textarea>
+						</div>
+						<div class="form-group hasfeedback">
+							<select class="combobox input-large form-control" name="university">
+								<option value="">Selecionar a Universidade </option>
+								<option value="CEFET">CEFETMG</option>
+								<option value="ITA">ITA</option>
+								<option value="UFMG">UFMG</option>               
+							</select>
+						</div>
+						<div class="form-group hasfeedback">
+							<select class="combobox input-large form-control" name="knowledge"  >
+								<option value="">Selecionar uma área de Conhecimento </option>
+								<option value="IC">Inteligência Computacional</option>
+								<option value="IHC">IHC</option>
+								<option value="AOC">AOC</option>
+								<option value="Hardware">Hardware</option>											
+							</select>
+						</div>
+						<div class="form-group">
+							<input class="form-control " min="0" type="number" placeholder="Valor da Bolsa" name="valorBolsa">
+						</div>
+						<div class="form-group">
+							<span class="input-group-addon">Data Inicio</span>
+							<input type="text" class="form-control " name="dataInicio" id="dataInicio" placeholder="dd/mm/yyyy">
+						</div>
+						<div class="form-group">
+							<span class="input-group-addon">Data Fim</span>
+							<input type="text" class="form-control" name="dataFim" id="dataFim" placeholder="dd/mm/yyyy">
+						</div>
+					<div class="form-group">
+                        <button type="submit" class="btn btn-warning btn-lg button-success" style="width: 100%;" disabled><span class="glyphicon glyphicon-ok-sign"></span>Criar</button>
+					</div>
+                </form>
+            </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal cadastro end -->
+        
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="text-align: center;">
+           <h3>Operação Realizada Com Sucesso!</h3>
+        <button button onclick="location.href='logged.html'" class="btn btn-success btn-xl">Ok!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+        
+        
+                
+<div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="text-align: center;">
+           <h3>Operação Cancelada!</h3>
+        <button button onclick="location.href='logged.html'" class="btn btn-success btn-xl">Ok!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+	<div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<h4 class="modal-title" id="myModalLabel">Editar Usuário</h4>
+				</div>
+				<div class="modal-body">
+                   <form class="registerForm" id="registrationForm" method="post" action='' name="signupForm">
+		              <div class="form-group">
+                      <div class="input-group">
+                           <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" name="email" id="emailSig" placeholder=" google@google.com" aria-describedby="basic-addon1" disabled>		          
+                      </div>
+                      </div>
+					  <div class="form-group">
+                      <div class="input-group"> 
+                            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" name="nome" id="nomeUser" value="Google" aria-describedby="basic-addon1" >		          
+                      </div>
+                      </div>
+					  <div class="form-group">
+						<div class="input-group"> 
+                          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                          <input type="password" class="form-control" id="signUpPassword" name="password" placeholder="Digite a Senha *">
+						</div>
+					  </div>
+					  <div class="form-group">                      
+						<div class="input-group"> 
+                          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                          <input type="password" class="form-control" id="matchPassword" name="confirmPassword" placeholder="Insira novamente a Senha *">
+						</div>
+					  </div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-info"  >Editar</button>
+						</div>
+                    </form>    
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+    
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title custom_align" id="Heading">Deletar</h4>
+				</div>
+				<div class="modal-body">
+					<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span>Tem certeza que deseja excluir esse projeto?</div>
+				</div>
+				<div class="modal-footer ">
+					<button type="button" onclick="cancelOp()" id="cancelActionT" href="#" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span>Sim</button>
+					<button type="button" onclick="cancelOpF()" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Não</button>
+				</div>	
+			</div>
+    <!-- /.modal-content --> 
+		</div>
+      <!-- /.modal-dialog --> 
+	</div>
+		<!-- Fim Modals -->        
+    </section>
+
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Academia P&D!</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Politicas de privacidade</a>
+                        </li>
+                        <li><a href="#">Termos de Uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+     
+    <link rel="stylesheet" href="dist/css/bootstrapValidator.min.css"/>
+        <!-- Either use the compressed version (recommended in the production site) -->
+    <script type="text/javascript" src="dist/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="src/js/language/pt_BR.js"></script> 
+	<script type="text/javascript" src="js/logged.js"></script>   	
+
+</body>
+
+</html>
