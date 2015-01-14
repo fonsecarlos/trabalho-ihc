@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Academia P&D</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dist/css/bootstrapValidator.min.css"/>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+    
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Academia P&D</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="padding: 15px;min-width: 250px;">
+                        <li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form  class="registerForm" role="form" data-toggle="validator" name="login" id="loginForm" action="logged.html">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                       <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email"> 
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="Senha">
+                                    </div>
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-success btn-block" disabled>Entrar</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </li>
+                     
+                     </ul>    
+        </li>       
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Sobre</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Procedimento</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Time</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                </div>
+            
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Bem vindo!</div>
+                <div class="intro-lead-in">Resolva os problemas da sua empresa com as melhores universidades do Brasil!</div>
+                <a href="#" class="btn btn-xl"
+                    data-toggle="modal"
+                    data-target="#cadastroModal">Cadastre-se!
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Modal cadastro -->
+    <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h4 class="modal-title" id="myModalLabel">Cadastro</h4>
+            </div>
+            <div class="modal-body">
+                <form class="registerForm" id="registrationForm" method="post" action='' name="signupForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-tag fa-fw"></i></span>
+                            <input type="text" class="form-control" name="name" id="nomeSig" placeholder="Nome da empresa" aria-describedby="basic-addon1">		          
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"> @ </span>
+                            <input type="text" class="form-control" name="email" id="emailSig" placeholder="Email" aria-describedby="basic-addon1">		          
+                        </div>
+                      </div>
+                    <div class="form-group">
+                      <div class="input-group"> 
+                          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                          <input type="password" class="form-control" id="signUpPassword" name="password" placeholder="Digite a Senha">
+                      </div>
+                    </div>
+                    <div class="form-group">                      
+                      <div class="input-group"> 
+                          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                          <input type="password" class="form-control" id="matchPassword" name="confirmPassword" placeholder="Digite novamente a Senha">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success" disabled>Cadastre-se</button>
+	                </div>
+                </form>    
+            </div>
+
+    </div>
+  </div>
+</div>
+ <!-- Modal cadastro end -->
+    
+    <div class="modal fade" id="cadastroSuccess" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="text-align: center;">
+           <h3>Cadastro realizado com sucesso!</h3>
+        <button button onclick="location.href='index.html'" class="btn btn-success btn-xl">Ok!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sobre</h2>
+                    <h3 class="section-subheading text-muted">Soluções de problemas através de produção de conhecimento.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">P&D</h4>
+                    <p class="text-muted">Conectamos sua empresa com os melhores pesquisadores do Brasil, facilitando assim a pesquisa e o desenvolvimento voltados para resolver problemas da sua empresa.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Crie seu projeto</h4>
+                    <p class="text-muted">Cadastre seus projetos, criados especificamente para resolver os problemas da sua empresa, classificando por áreas de interesse. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Segurança</h4>
+                    <p class="text-muted">Tudo isso com toda discrição e segurança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Procedimento</h2>
+                    <h3 class="section-subheading text-muted">Como a sua empresa pode utilizar nossos serviços?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/passo1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Passo 1</h4>
+                                    <h4 class="subheading">Surge uma demanda interna</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Sua empresa se depara com um problema cuja solução demanda muito tempo e dedicação. O custo é alto demais para que a empresa possa investir na resolução, mas a solução trará muitos benefícios.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/passo2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Passo 2</h4>
+                                    <h4 class="subheading">A empresa cria uma conta</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Sua empresa entra em nosso website e cria um cadastro para a mesma, pois através do nosso sitema será possível encontrar pessoas que possam resolver o seu problema.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Passo 3</h4>
+                                    <h4 class="subheading">Criação de um demanda</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Agora com acesso a área exclusiva, sua empresa poderá criar uma demanda de pesquisa em sua área de interesse.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/passo4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Passo 4</h4>
+                                    <h4 class="subheading">Pesquisadores aceitam a demanda</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Pesquisadores das melhores Universidades do Brasil aceitam a demanda de pesquisa da sua empresa e vocês começam a trabalhar em conjunto para resolver o problema e ao mesmo tempo produzir conhecimento.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/passo5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Passo 5</h4>
+                                    <h4 class="subheading">Solução</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Finalmente, depois de muito trabalho, sua empresa juntamente com os pesquisadores conseguiram encontrar a solução para o problema!</p>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nosso Incrível Time!</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/paty.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Paty Sette</h4>
+                        <p class="text-muted">Big Boss</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/fefe.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Felipe Fernandes</h4>
+                        <p class="text-muted">Big Boss</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/caik.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Carlos Caik</h4>
+                        <p class="text-muted">Estagiário</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/team/vitim.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Victinho</h4>
+                        <p class="text-muted">Desenvolvedor Avançado</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/cefet.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/ufmg.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/ita.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Contact us section-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contato</h2>
+                    <h3 class="section-subheading text-muted">Sua opinião é muito importante para nós.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="registerForm" name="sentMessage" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Seu Nome" id="name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Seu Email" id="emailMessage" name="email">
+                                </div>
+                               
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Mensagem" id="message" name="message"></textarea>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl" id="sendMessage" disabled>Enviar Mensagem!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<div class="modal fade" id="sendingMessageModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Enviando Mensagem..</h3>
+      </div>
+      <div class="modal-body">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            <span class="sr-only">100% Complete</span>
+            </div>
+          </div>
+           <button onclick="cancel()" class="btn btn-success btn-xl" id="cancelMessage">Cancelar!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+<div class="modal fade" id="messageSentModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="text-align: center;">
+           <h3>Mensagem Enviada!</h3>
+        <button button onclick="clearMessageForm()" class="btn btn-success btn-xl">Ok!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Academia P&D!</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Politicas de privacidade</a>
+                        </li>
+                        <li><a href="#">Termos de Uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <!--<script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    
+    <!-- Either use the compressed version (recommended in the production site) -->
+    <script type="text/javascript" src="dist/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="src/js/language/pt_BR.js"></script>
+    
+    <script type="text/javascript" src="js/academia.js"></script>
+
+</body>
+
+</html>
